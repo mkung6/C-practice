@@ -1,5 +1,5 @@
 # C-practice
-Practice using the C programming language
+My personal practice using the C programming language
 
 
 ## Goals:
