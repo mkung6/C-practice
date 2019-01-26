@@ -10,31 +10,6 @@ Write a function that reverses a string.
 char * reverse(char s[]);
 char * reverseNumberTwo(char s[]);
 
-int main() {
-  char unitTestOne[] = "abc";
-  char unitTestTwo[] = "";
-  char unitTestThree[] = "a";
-  char unitTestFour[] = "tacocat";
-  char unitTestFive[] = "really long string";
-  // copy the string to print it for reference first
-  // because char array is passed by value and will be reversed
-  // as the printf() is being evaluated
-  char temp[TEMP_SIZE];
-  strcpy(temp, unitTestOne);
-  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestOne));
-  strcpy(temp, unitTestTwo);
-  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestTwo));
-  strcpy(temp, unitTestThree);
-  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestThree));
-  strcpy(temp, unitTestFour);
-  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestFour));
-  strcpy(temp, unitTestFive);
-  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestFive));
-
-  strcpy(temp, unitTestOne);
-  printf("String: %s\nReversed: %s\n",temp,reverseNumberTwo(unitTestOne));
-}
-
 char * reverse(char s[]) {
   // initialize a temporary char array with a size to hold one char
   char temp[1];
@@ -59,4 +34,29 @@ char * reverseNumberTwo(char s[]) {
     s[j] = temp;
   }
   return s;
+}
+
+int main() {
+  char unitTestOne[] = "abc";
+  char unitTestTwo[] = "";
+  char unitTestThree[] = "a";
+  char unitTestFour[] = "tacocat";
+  char unitTestFive[] = "really long string";
+  // copy the string to print it for reference first
+  // because char array is passed by value and will be reversed
+  // as the printf() is being evaluated
+  char temp[TEMP_SIZE];
+  strcpy(temp, unitTestOne);
+  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestOne));
+  strcpy(temp, unitTestTwo);
+  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestTwo));
+  strcpy(temp, unitTestThree);
+  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestThree));
+  strcpy(temp, unitTestFour);
+  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestFour));
+  strcpy(temp, unitTestFive);
+  printf("String: %s\nReversed: %s\n",temp,reverse(unitTestFive));
+
+  strcpy(temp, unitTestOne);
+  printf("String: %s\nReversed: %s\n",temp,reverseNumberTwo(unitTestOne));
 }
