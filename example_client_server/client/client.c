@@ -12,7 +12,7 @@ int main() {
     struct sockaddr_in serverAddr;
     char buffer[1024] = {0};
 
-    char *name = "Test Message";
+    char *test = "Test Message";
 
     if ((clientSocket = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
       printf("\nSocket creation error\n");
@@ -33,8 +33,8 @@ int main() {
       printf("\nConnection Failed \n");
       return -1;
     }
-    send(clientSocket, name, strlen(name), 0);
-    printf("Name sent\n");
+    send(clientSocket, test, strlen(test), 0);
+    printf("Test message sent\n");
 
     valread = read(clientSocket, buffer, 1024);
 
