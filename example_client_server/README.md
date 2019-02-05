@@ -1,4 +1,4 @@
-Example program for multithreaded socket programming in C
+Example introductory program for multithreaded socket programming in C
 
 cd to server file and compile using
 
