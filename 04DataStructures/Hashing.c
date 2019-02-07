@@ -88,6 +88,9 @@ struct testScore* search(char name[]) {
   return NULL;
 }
 
+/*
+Note scores will not be sorted when they are displayed.
+*/
 void displayScores() {
   int i;
   int count = 01;
